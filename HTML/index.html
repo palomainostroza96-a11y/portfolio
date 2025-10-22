@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Paloma Inostroza - UX/UI Designer Portfolio">
+  <meta name="keywords" content="UX Designer, UI Designer, Portfolio, Web Design">
+  <meta name="author" content="Paloma Inostroza">
+  
+  <title>Paloma Inostroza | UX/UI Designer</title>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="hero-spec.css">
+  <script src="lang.js"></script>
+  <script src="nav-active.js" defer></script>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <!-- Vertical Sidebar Navigation - Fixed to Viewport -->
+    <div class="sidebar-nav">
+      <!-- Navigation (hidden structure for compatibility) -->
+      <nav class="nav">
+        <!-- Icon Navigation -->
+        <ul class="icon-nav">
+          <li class="icon-nav-item" data-tooltip="Home">
+            <a href="#home" class="icon-nav-link active">
+              <span style="font-size: 18px; filter: grayscale(1) brightness(10);">🏠</span>
+            </a>
+          </li>
+          <li class="icon-nav-item" data-tooltip="About">
+            <a href="#about" class="icon-nav-link">
+              <i class="fas fa-user"></i>
+            </a>
+          </li>
+          <li class="icon-nav-item" data-tooltip="Projects">
+            <a href="#projects" class="icon-nav-link">
+              <i class="fas fa-folder-open"></i>
+            </a>
+          </li>
+          <li class="icon-nav-item" data-tooltip="Skills">
+            <a href="#skills" class="icon-nav-link">
+              <span style="font-size: 18px; filter: grayscale(1) brightness(10);">✏️</span>
+            </a>
+          </li>
+          <li class="icon-nav-item" data-tooltip="Contact">
+            <a href="#contact" class="icon-nav-link">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Hero Content - Centered -->
+    <div class="hero-content">
+      <!-- "Open for Work" Badge - Left Corner -->
+      <div class="work-status-badge">
+        <span data-key="work-status">Open for Work</span>
+      </div>
+
+      <!-- Main Content Grid: Profile Left, Text Right -->
+      <div class="hero-main-grid">
+        <!-- Profile Image - Left Side -->
+        <div class="profile-img">
+          <img src="../IMAGES/paloma.png" alt="Paloma Inostroza - UX/UI Designer" />
+        </div>
+
+        <!-- Text Content - Right Side -->
+        <div class="text-content">
+          <h1>I'm</h1>
+          <span class="highlight" id="nameText" data-text="PALOMA">PALOMA</span>
+          <h2 class="typing-text" id="roleText" data-key="role" data-text="User Experience Designer"></h2>
+          <p class="typing-text" id="descText" data-key="desc" data-text="I uncover the details others overlook — turning real human needs into intuitive design solutions."></p>
+          <div class="btn-group">
+            <a href="#contact" class="btn primary" data-key="hire">Contact Me</a>
+            <a href="https://www.canva.com/design/DAGyst57a3I/jLIdh9UcavNgaitjLhQ86Q/view?utm_content=DAGyst57a3I&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h8b528299b1" target="_blank" class="btn secondary" data-key="resume">Resumé</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Info - Inside Glass Frame -->
+      <div class="hero-contact">
+        <div class="footer-item">
+          <a href="mailto:paloma.inostroza96@gmail.com">paloma.inostroza96@gmail.com</a>
+        </div>
+        <div class="footer-item">
+          <a href="tel:+46736364710">+46 73 63 64 710</a>
+        </div>
+        <div class="footer-item">
+          <span>Uppsala, Sweden</span>
+        </div>
+      </div>
+
+    <!-- Scroll Indicator -->
+    <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+      <div class="scroll-indicator-circle">
+        <div class="scroll-indicator-icon"></div>
+      </div>
+      <span class="scroll-indicator-text" data-key="scroll-hint">Scroll</span>
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-key="about">About Me</h2>
+        <div class="title-underline"></div>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <h3 data-key="about-subtitle">My Journey into UX/UI Design</h3>
+          <p data-key="about-text">
+            My journey into UX/UI design began with a deep curiosity about people and how we behave, what motivates us, and how we interact with technology in everyday life. Through my background in various professional roles, I've learned to meet people in many different situations, which has given me a unique understanding of needs and behaviors.
+          </p>
+          <p data-key="about-text2">
+            During my studies, I've had the opportunity to translate this understanding into practical projects, working user-centrically and exploring how design can create real value.
+          </p>
+          <p data-key="about-text3">
+            Today, I am driven by the ambition to continue growing as a designer and to contribute with solutions that are accessible, engaging, and meaningful — design that not only works, but truly makes a difference.
+          </p>
+        </div>
+        
+        <div class="about-image-grid">
+          <div class="about-photo-item">
+            <img src="../IMAGES/me.png.png" alt="Paloma Inostroza" class="about-grid-photo">
+          </div>
+          <div class="about-photo-item">
+            <img src="../IMAGES/ams.png.jpeg" alt="Paloma at museum" class="about-grid-photo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Upcoming Project - ECHO -->
+  <section class="echo-featured" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-key="projects">Projects</h2>
+        <div class="title-underline"></div>
+      </div>
+      
+      <div class="upcoming-project-banner">
+        <div class="upcoming-content">
+          <div class="upcoming-text">
+            <span class="coming-soon-label">Coming Soon</span>
+            <h3>ECHO</h3>
+            <p>Exciting new project currently in development. Stay tuned for updates!</p>
+            <div class="project-tags">
+              <span>In Progress</span>
+              <span>UX Design</span>
+              <span>Innovation</span>
+            </div>
+          </div>
+          <div class="upcoming-image">
+            <img src="../IMAGES/Dimfog.png.png" alt="Echo Project">
+            <div class="image-overlay">
+              <i class="fa-solid fa-hourglass-half"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sneak Peek Section -->
+  <section class="sneak-peek">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="sneak-peek-header">
+        <div class="telescope-icon">
+          <i class="fa-solid fa-eye"></i>
+        </div>
+        <h2 class="sneak-peek-title" data-key="sneak-peek-title">Sneak peek of my selected works</h2>
+      </div>
+
+      <!-- Horizontal Infinite Loop Carousel -->
+      <div class="carousel-wrapper">
+        <div class="carousel-track" id="carouselTrack">
+          <!-- Card 1: IDUN E-commerce -->
+          <a href="idun-case-study.html" class="carousel-card">
+            <img src="../IMAGES/duni.png.png" alt="IDUN E-commerce Design">
+            <div class="project-info-overlay">
+              <span class="project-category">E-commerce Redesign</span>
+              <h3 class="project-name">IDUN Minerals</h3>
+              <p class="project-description">Website redesign focused on user experience and conversion optimization</p>
+              <div class="project-tags">
+                <span>UX Design</span>
+                <span>E-commerce</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 2: Blood Maiden Game UI -->
+          <a href="bloodmaiden-case-study.html" class="carousel-card">
+            <img src="../IMAGES/bm.png.png" alt="Blood Maiden Game UI">
+            <div class="project-info-overlay">
+              <span class="project-category">Game Website UX/UI Design</span>
+              <h3 class="project-name">Blood Maiden</h3>
+              <p class="project-description">Immersive dark fantasy game interface with cinematic storytelling</p>
+              <div class="project-tags">
+                <span>Game Design</span>
+                <span>UI/UX</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 3: Treasure of Itza Board Game -->
+          <a href="treasure-case-study.html" class="carousel-card">
+            <img src="../IMAGES/isla.png.png" alt="Treasure of Itza Board Game">
+            <div class="project-info-overlay">
+              <span class="project-category">Board Game Design</span>
+              <h3 class="project-name">Treasure of Itza</h3>
+              <p class="project-description">Adventure board game with strategic gameplay and visual storytelling</p>
+              <div class="project-tags">
+                <span>Strategic Design</span>
+                <span>Illustration</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 4: Golden Pen Website Redesign -->
+          <a href="goldenpen-case-study.html" class="carousel-card">
+            <img src="../IMAGES/avg.png.png" alt="Golden Pen Website Redesign">
+            <div class="project-info-overlay">
+              <span class="project-category">Website Redesign</span>
+              <h3 class="project-name">Golden Pen</h3>
+              <p class="project-description">Modern website redesign improving accessibility and user engagement</p>
+              <div class="project-tags">
+                <span>Web Design</span>
+                <span>Accessibility</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 5: Drop In Mobile App -->
+          <a href="dropin-case-study.html" class="carousel-card">
+            <img src="../IMAGES/drop.png.png" alt="Drop In Mobile Healthcare App">
+            <div class="project-info-overlay">
+              <span class="project-category">Mobile App</span>
+              <h3 class="project-name">Can I Drop In?</h3>
+              <p class="project-description">Veterinary emergency app connecting pet owners with real-time care</p>
+              <div class="project-tags">
+                <span>Mobile Design</span>
+                <span>Healthcare</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Card 6: Echo Project (Coming Soon) -->
+          <div class="carousel-card" style="cursor: default;">
+            <img src="../IMAGES/Dimfog.png.png" alt="Echo Project">
+            <div class="project-info-overlay">
+              <span class="project-category">Coming Soon</span>
+              <h3 class="project-name">Echo</h3>
+              <p class="project-description">Exciting new project currently in development</p>
+              <div class="project-tags">
+                <span>In Progress</span>
+                <span>Innovation</span>
+              </div>
+            </div>
+            <div class="coming-soon-badge">
+              <i class="fa-solid fa-hourglass-half"></i>
+              <span>Coming Soon</span>
+            </div>
+          </div>
+          
+          <!-- Duplicate cards for seamless loop -->
+          <a href="idun-case-study.html" class="carousel-card">
+            <img src="../IMAGES/duni.png.png" alt="IDUN E-commerce Design">
+            <div class="project-info-overlay">
+              <span class="project-category">E-commerce Redesign</span>
+              <h3 class="project-name">IDUN Minerals</h3>
+              <p class="project-description">Website redesign focused on user experience and conversion optimization</p>
+              <div class="project-tags">
+                <span>UX Design</span>
+                <span>E-commerce</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="bloodmaiden-case-study.html" class="carousel-card">
+            <img src="../IMAGES/bm.png.png" alt="Blood Maiden Game UI">
+            <div class="project-info-overlay">
+              <span class="project-category">Game Website UX/UI Design</span>
+              <h3 class="project-name">Blood Maiden</h3>
+              <p class="project-description">Immersive dark fantasy game interface with cinematic storytelling</p>
+              <div class="project-tags">
+                <span>Game Design</span>
+                <span>UI/UX</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="treasure-case-study.html" class="carousel-card">
+            <img src="../IMAGES/isla.png.png" alt="Treasure of Itza Board Game">
+            <div class="project-info-overlay">
+              <span class="project-category">Board Game Design</span>
+              <h3 class="project-name">Treasure of Itza</h3>
+              <p class="project-description">Adventure board game with strategic gameplay and visual storytelling</p>
+              <div class="project-tags">
+                <span>Strategic Design</span>
+                <span>Illustration</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="goldenpen-case-study.html" class="carousel-card">
+            <img src="../IMAGES/avg.png.png" alt="Golden Pen Website Redesign">
+            <div class="project-info-overlay">
+              <span class="project-category">Website Redesign</span>
+              <h3 class="project-name">Golden Pen</h3>
+              <p class="project-description">Modern website redesign improving accessibility and user engagement</p>
+              <div class="project-tags">
+                <span>Web Design</span>
+                <span>Accessibility</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="dropin-case-study.html" class="carousel-card">
+            <img src="../IMAGES/drop.png.png" alt="Drop In Mobile Healthcare App">
+            <div class="project-info-overlay">
+              <span class="project-category">Mobile App</span>
+              <h3 class="project-name">Can I Drop In?</h3>
+              <p class="project-description">Veterinary emergency app connecting pet owners with real-time care</p>
+              <div class="project-tags">
+                <span>Mobile Design</span>
+                <span>Healthcare</span>
+              </div>
+            </div>
+          </a>
+
+          <div class="carousel-card" style="cursor: default;">
+            <img src="../IMAGES/Dimfog.png.png" alt="Echo Project">
+            <div class="project-info-overlay">
+              <span class="project-category">Coming Soon</span>
+              <h3 class="project-name">Echo</h3>
+              <p class="project-description">Exciting new project currently in development</p>
+              <div class="project-tags">
+                <span>In Progress</span>
+                <span>Innovation</span>
+              </div>
+            </div>
+            <div class="coming-soon-badge">
+              <i class="fa-solid fa-hourglass-half"></i>
+              <span>Coming Soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <script>
+        // Infinite Horizontal Loop Carousel
+        (function() {
+          const track = document.getElementById('carouselTrack');
+          const cards = document.querySelectorAll('.carousel-card');
+          let isPaused = false;
+          
+          // Pause on hover
+          track.addEventListener('mouseenter', () => {
+            isPaused = true;
+            track.style.animationPlayState = 'paused';
+          });
+          
+          track.addEventListener('mouseleave', () => {
+            isPaused = false;
+            track.style.animationPlayState = 'running';
+          });
+          
+          // Optional: Add center card highlighting on scroll
+          function updateCenterCard() {
+            if (isPaused) return;
+            
+            const trackRect = track.getBoundingClientRect();
+            const centerX = window.innerWidth / 2;
+            
+            cards.forEach(card => {
+              const cardRect = card.getBoundingClientRect();
+              const cardCenterX = cardRect.left + cardRect.width / 2;
+              const distance = Math.abs(centerX - cardCenterX);
+              
+              // Highlight center card
+              if (distance < 200) {
+                card.classList.add('center-highlight');
+              } else {
+                card.classList.remove('center-highlight');
+              }
+            });
+          }
+          
+          // Update center card on animation
+          setInterval(updateCenterCard, 100);
+        })();
+      </script>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <i class="fa-solid fa-arrows-left-right"></i>
+        <span data-key="scroll-hint">Hover to pause • Infinite scrolling carousel</span>
+      </div>
+      
+      <!-- View All Projects Button -->
+      <div class="view-all-projects-wrapper">
+        <div class="project-card view-all-card">
+          <a href="all-projects.html" class="view-all-link">
+            <div class="view-all-circle">
+              <img src="../IMAGES/arrow.png.png" alt="Arrow">
+            </div>
+            <span>View All Projects</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Tools Section -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <div class="skills-bubble-container">
+        <h2 class="skills-center-title" data-key="skills-title">Skills & Tools</h2>
+        <div class="skills-bubbles">
+          <div class="skill-bubble" data-position="1">
+            <i class="fa-brands fa-figma"></i>
+            <span>Figma</span>
+          </div>
+          <div class="skill-bubble" data-position="2">
+            <i class="fa-solid fa-code"></i>
+            <span>Framer</span>
+          </div>
+          <div class="skill-bubble" data-position="3">
+            <i class="fa-solid fa-chart-line"></i>
+            <span>Google Analytics</span>
+          </div>
+          <div class="skill-bubble" data-position="4">
+            <i class="fa-solid fa-flask"></i>
+            <span>A/B Testing</span>
+          </div>
+          <div class="skill-bubble" data-position="5">
+            <i class="fa-solid fa-chart-simple"></i>
+            <span>Hotjar</span>
+          </div>
+          <div class="skill-bubble" data-position="6">
+            <i class="fa-solid fa-pen-ruler"></i>
+            <span>Wireframing</span>
+          </div>
+          <div class="skill-bubble" data-position="7">
+            <i class="fa-solid fa-paintbrush"></i>
+            <span>UI Design</span>
+          </div>
+          <div class="skill-bubble" data-position="8">
+            <i class="fa-solid fa-users"></i>
+            <span>Customer-Facing</span>
+          </div>
+          <div class="skill-bubble" data-position="9">
+            <i class="fa-solid fa-code"></i>
+            <span>Qoder</span>
+          </div>
+          <div class="skill-bubble" data-position="10">
+            <i class="fa-solid fa-laptop-code"></i>
+            <span>Visual Studio</span>
+          </div>
+          <div class="skill-bubble" data-position="11">
+            <i class="fa-solid fa-palette"></i>
+            <span>Canva</span>
+          </div>
+          <div class="skill-bubble" data-position="12">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <span>Prototyping</span>
+          </div>
+          <div class="skill-bubble" data-position="13">
+            <i class="fa-solid fa-arrows-spin"></i>
+            <span>Agile</span>
+          </div>
+          <div class="skill-bubble" data-position="14">
+            <i class="fa-solid fa-diagram-project"></i>
+            <span>Scrum</span>
+          </div>
+          <div class="skill-bubble" data-position="15">
+            <i class="fa-solid fa-chalkboard"></i>
+            <span>Miro</span>
+          </div>
+          <div class="skill-bubble" data-position="16">
+            <i class="fa-brands fa-trello"></i>
+            <span>Trello</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <!-- Completed Projects Grid -->
+      <div class="projects-grid">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-key="contact">Get In Touch</h2>
+        <div class="title-underline"></div>
+        <p class="section-subtitle" data-key="contact-subtitle">
+          Let's work together on your next project
+        </p>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div>
+              <h4 data-key="email-label">Email</h4>
+              <a href="mailto:paloma.inostroza96@gmail.com">paloma.inostroza96@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div>
+              <h4 data-key="phone-label">Phone</h4>
+              <a href="tel:+46736364710">+46 73 63 64 710</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div>
+              <h4 data-key="location-label">Location</h4>
+              <p>Uppsala, Sweden</p>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/paloma-munoz-inostroza-994182363/" target="_blank" aria-label="LinkedIn">
+              <img src="../IMAGES/ld.png.png" alt="LinkedIn">
+            </a>
+            <a href="https://mail.google.com/mail/u/0/?hl=sv#inbox?compose=new" target="_blank" aria-label="Gmail">
+              <img src="../IMAGES/gm.png.png" alt="Gmail">
+            </a>
+            <a href="https://www.facebook.com/paloma.munozinostroza" target="_blank" aria-label="Facebook">
+              <img src="../IMAGES/fb.png.png" alt="Facebook">
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" data-key="form-name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" data-key="form-email" required>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder="Subject" data-key="form-subject" required>
+          </div>
+          <div class="form-group">
+            <textarea rows="5" id="message" name="message" placeholder="Your Message" data-key="form-message" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" data-key="send-message">Send Message</button>
+        </form>
+        
+        <script>
+          document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            const mailtoLink = `mailto:paloma.inostroza96@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message)}`;
+            
+            window.location.href = mailtoLink;
+          });
+        </script>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2025 Paloma Inostroza. <span data-key="rights">All rights reserved.</span></p>
+      <p data-key="footer-tagline">Designed with <i class="fa-solid fa-heart"></i> and attention to detail</p>
+    </div>
+  </footer>
+
+  <!-- Skills Animation Script -->
+  <script>
+    // Intersection Observer for Skills & Tools bubble animation
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.2 // Trigger when 20% of the section is visible
+    };
+
+    const animateSkills = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const skillBubbles = entry.target.querySelectorAll('.skill-bubble');
+          
+          // Add animation class to each bubble with staggered timing
+          skillBubbles.forEach((bubble, index) => {
+            setTimeout(() => {
+              bubble.classList.add('animate-in');
+            }, index * 150); // 150ms delay between each bubble
+          });
+          
+          // Stop observing after animation is triggered (only animate once)
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+
+    // Create observer
+    const skillsObserver = new IntersectionObserver(animateSkills, observerOptions);
+
+    // Wait for DOM to load
+    document.addEventListener('DOMContentLoaded', () => {
+      const skillsContainer = document.querySelector('.skills-bubble-container');
+      if (skillsContainer) {
+        skillsObserver.observe(skillsContainer);
+      }
+    });
+  </script>
+
+  <!-- Hero Typing Animation Script -->
+  <script>
+    class TypeWriter {
+      constructor(element, text, speed = 50) {
+        this.element = element;
+        this.text = text;
+        this.speed = speed;
+        this.charIndex = 0;
+      }
+
+      type() {
+        return new Promise((resolve) => {
+          const typeChar = () => {
+            if (this.charIndex < this.text.length) {
+              this.element.textContent += this.text.charAt(this.charIndex);
+              this.charIndex++;
+              
+              // Random variation in typing speed (40-60ms)
+              const randomSpeed = this.speed + (Math.random() * 20 - 10);
+              setTimeout(typeChar, randomSpeed);
+            } else {
+              resolve();
+            }
+          };
+          typeChar();
+        });
+      }
+    }
+
+    // Looping Subtitle Typing Animation
+    class LoopingTyper {
+      constructor(element, phrases, typingSpeed = 70, deletingSpeed = 40, pauseTime = 1500) {
+        this.element = element;
+        this.phrases = phrases;
+        this.typingSpeed = typingSpeed;
+        this.deletingSpeed = deletingSpeed;
+        this.pauseTime = pauseTime;
+        this.currentPhraseIndex = 0;
+        this.isDeleting = false;
+        this.currentText = '';
+        this.charIndex = 0;
+      }
+
+      start() {
+        this.type();
+      }
+
+      type() {
+        const currentPhrase = this.phrases[this.currentPhraseIndex];
+        
+        if (this.isDeleting) {
+          // Deleting characters
+          this.currentText = currentPhrase.substring(0, this.charIndex - 1);
+          this.charIndex--;
+        } else {
+          // Typing characters
+          this.currentText = currentPhrase.substring(0, this.charIndex + 1);
+          this.charIndex++;
+        }
+
+        this.element.textContent = this.currentText;
+
+        let speed = this.isDeleting ? this.deletingSpeed : this.typingSpeed;
+        
+        // Add slight randomness for natural feel
+        speed += Math.random() * 20 - 10;
+
+        // Check if we finished typing the current phrase
+        if (!this.isDeleting && this.charIndex === currentPhrase.length) {
+          // Pause before deleting
+          speed = this.pauseTime;
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.charIndex === 0) {
+          // Move to next phrase
+          this.isDeleting = false;
+          this.currentPhraseIndex = (this.currentPhraseIndex + 1) % this.phrases.length;
+          speed = 500; // Brief pause before starting next phrase
+        }
+
+        setTimeout(() => this.type(), speed);
+      }
+    }
+
+    // Initialize typing animation on page load
+    document.addEventListener('DOMContentLoaded', async () => {
+      // Get elements
+      const nameText = document.getElementById('nameText');
+      const roleText = document.getElementById('roleText');
+      const descText = document.getElementById('descText');
+
+      // Get text content from data attributes
+      const nameContent = nameText.getAttribute('data-text');
+      const descContent = descText.getAttribute('data-text');
+
+      // Clear initial content
+      nameText.textContent = '';
+      roleText.textContent = '';
+      descText.textContent = '';
+
+      // Add cursor to active element
+      const addCursor = (element) => {
+        element.classList.add('typing-cursor');
+      };
+
+      const removeCursor = (element) => {
+        element.classList.remove('typing-cursor');
+      };
+
+      // Start typing sequence
+      try {
+        // Type "PALOMA"
+        addCursor(nameText);
+        await new TypeWriter(nameText, nameContent, 50).type();
+        removeCursor(nameText);
+        
+        // Pause 500ms
+        await new Promise(resolve => setTimeout(resolve, 500));
+        
+        // Start looping subtitle animation
+        const subtitlePhrases = [
+          "User Experience Designer",
+          "LIA Internship Applicant",
+          "A Human-Centered Designer",
+          "A Team Player",
+          "UX/UI Designer"
+        ];
+        
+        addCursor(roleText);
+        const loopingTyper = new LoopingTyper(roleText, subtitlePhrases, 90, 50, 1800);
+        loopingTyper.start();
+        
+        // Wait for first phrase to complete before showing description
+        await new Promise(resolve => setTimeout(resolve, 3000));
+        
+        // Type description (one-time, not looping)
+        addCursor(descText);
+        await new TypeWriter(descText, descContent, 45).type();
+        removeCursor(descText);
+        
+      } catch (error) {
+        console.error('Typing animation error:', error);
+      }
+    });
+  </script>
+
+</body>
+</html>
