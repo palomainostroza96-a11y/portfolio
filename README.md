@@ -40,7 +40,7 @@ PORTFOLIO/
 │   └── script.js           # Interactive features and language switching
 │
 └── IMAGES/
-    └── plums.png.png       # Your portrait image
+    └── paloma.png.png       # Your portrait image
 ```
 
 ## 🚀 Getting Started
@@ -219,3 +219,4 @@ This portfolio is created for Paloma Inostroza. Feel free to use it as inspirati
 **Built with ❤️ and attention to detail**
 
 For questions or support, contact: paloma.inostroza96@gmail.com
+
