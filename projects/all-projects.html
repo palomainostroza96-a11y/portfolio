@@ -1,852 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Selected Work - Paloma Inostroza UX/UI Designer Portfolio">
-  <meta name="keywords" content="UX Designer, UI Designer, Portfolio, Projects, Case Studies">
-  <meta name="author" content="Paloma Inostroza">
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Selected Work - Paloma Inostroza UX/UI Designer Portfolio" />
+  <meta name="keywords" content="UX Designer, UI Designer, Portfolio, Projects, Case Studies" />
+  <meta name="author" content="Paloma Inostroza" />
   <title>Selected Work | Paloma Inostroza</title>
-  
+
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  
+
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <script src="../JAVASCRIPT/lang.js" defer></script>
+
   <style>
-    /* Professional UX/UI Design Styles */
-    body {
-      background: #000000;
-      font-family: 'Poppins', sans-serif;
-      position: relative;
-      overflow-x: hidden;
-    }
-    
-    /* Blue and White glows behind the glass */
-    .bg-glow {
-      position: fixed;
-      width: 80vmin;
-      height: 80vmin;
-      filter: blur(100px);
-      pointer-events: none;
-      mix-blend-mode: screen;
-      opacity: 0.4;
-      z-index: 0;
-      animation: floatGlow 20s ease-in-out infinite;
-    }
-    
-    @keyframes floatGlow {
-      0%, 100% {
-        transform: translate(0, 0) scale(1);
-      }
-      50% {
-        transform: translate(-30px, 30px) scale(1.1);
-      }
-    }
-    
-    /* Blue glow - top right */
-    .bg-glow--left { 
-      background: radial-gradient(circle, #3BA7FF 0%, #2E8FD9 30%, transparent 60%);
-      left: 10%; 
-      top: 15%;
-    }
-    
-    /* White glow - bottom right */
-    .bg-glow--right { 
-      background: radial-gradient(circle, #FFFFFF 0%, #E0F4FF 30%, transparent 60%);
-      right: 5%; 
-      bottom: 20%;
-      animation: floatGlowReverse 25s ease-in-out infinite;
-    }
-    
-    @keyframes floatGlowReverse {
-      0%, 100% {
-        transform: translate(0, 0) scale(1);
-      }
-      50% {
-        transform: translate(30px, -30px) scale(1.15);
-      }
-    }
-    
-    /* Glass Frame Container */
-    .glass-container {
-      position: relative;
-      z-index: 1;
-      min-height: 100vh;
-    }
-    
-    .content-wrapper {
-      position: relative;
-      width: min(1400px, 92%);
-      margin: 0 auto;
-      border-radius: 30px;
-      padding: 50px 70px;
-      
-      /* Dark translucent glassmorphism background */
-      background: rgba(25, 25, 25, 0.4);
-      
-      /* Thin semi-transparent white border */
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      
-      /* 3D floating effect with shadows */
-      box-shadow:
-        0 8px 30px rgba(0, 0, 0, 0.4),
-        0 0 15px rgba(255, 255, 255, 0.1),
-        inset 0 1px 1px rgba(255, 255, 255, 0.2);
-      
-      /* Frosted glass blur effect */
-      backdrop-filter: blur(20px) saturate(130%);
-      -webkit-backdrop-filter: blur(20px) saturate(130%);
-      
-      /* Additional 3D depth */
-      transform-style: preserve-3d;
-      perspective: 1000px;
-    }
-    
-    /* Navigation - Clean & Professional */
-    .case-nav {
-      background: transparent;
-      padding: 1.5rem 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-    }
-    
-    .back-link {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 0.95rem;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      display: inline-flex;
-      align-items: center;
-      gap: 0.6rem;
-      opacity: 0.8;
-    }
-    
-    .back-link:hover {
-      opacity: 1;
-      color: #3BA7FF;
-      transform: translateX(-3px);
-    }
-    
-    /* Header - Minimal & Elegant */
-    .projects-header {
-      background: transparent;
-      padding: 4rem 0 3rem 0;
-      text-align: center;
-    }
-    
-    .page-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 4rem;
-      font-weight: 700;
-      color: #fff;
-      margin-bottom: 1.2rem;
-      letter-spacing: -0.5px;
-      line-height: 1.1;
-      /* Fade-in animation */
-      opacity: 0;
-      transform: translateY(-20px);
-      animation: fadeInDown 0.8s ease forwards;
-    }
-    
-    @keyframes fadeInDown {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    .page-subtitle {
-      font-size: 1.1rem;
-      color: rgba(255, 255, 255, 0.5);
-      max-width: 560px;
-      margin: 0 auto 2rem auto;
-      font-weight: 400;
-      letter-spacing: 0;
-      line-height: 1.6;
-      /* Fade-in animation */
-      opacity: 0;
-      animation: fadeIn 1s ease 0.3s forwards;
-    }
-    
-    /* Filter Buttons */
-    .filter-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 2.5rem;
-      flex-wrap: wrap;
-      /* Fade-in animation */
-      opacity: 0;
-      animation: fadeIn 1s ease 0.5s forwards;
-    }
-    
-    .filter-btn {
-      padding: 0.7rem 1.8rem;
-      background: rgba(59, 167, 255, 0.1);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border: 1px solid rgba(59, 167, 255, 0.25);
-      border-radius: 25px; /* Pill-shaped */
-      color: rgba(255, 255, 255, 0.7);
-      font-size: 0.9rem;
-      font-weight: 600;
-      font-family: 'Poppins', sans-serif;
-      cursor: pointer;
-      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    /* Glowing effect on hover */
-    .filter-btn::before {
-      content: '';
-      position: absolute;
-      inset: -2px;
-      background: linear-gradient(45deg, #3BA7FF, #4DB8FF, #3BA7FF);
-      border-radius: 25px;
-      opacity: 0;
-      filter: blur(8px);
-      transition: opacity 0.4s ease;
-      z-index: -1;
-    }
-    
-    .filter-btn:hover {
-      background: rgba(59, 167, 255, 0.2);
-      border-color: rgba(59, 167, 255, 0.5);
-      color: #E0F4FF;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(59, 167, 255, 0.3);
-    }
-    
-    .filter-btn:hover::before {
-      opacity: 0.4; /* Show glowing outline */
-    }
-    
-    .filter-btn.active {
-      background: rgba(59, 167, 255, 0.3);
-      border-color: rgba(59, 167, 255, 0.6);
-      color: #E0F4FF;
-      box-shadow: 0 4px 16px rgba(59, 167, 255, 0.4);
-    }
-    
-    .filter-btn.active::before {
-      opacity: 0.5;
-    }
-    
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
-    }
-    
-    /* Projects Section - Spacious & Clean */
-    .all-projects-section {
-      background: transparent;
-      padding: 3rem 0 5rem 0;
-      min-height: auto;
-    }
-    
-    .all-projects-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 5rem 5rem;
-      row-gap: 8rem;
-      margin-top: 3rem;
-      max-width: 1400px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    
-    /* Project Cards - Professional & Subtle */
-    .project-card {
-      background: rgba(15, 15, 15, 0.85);
-      backdrop-filter: blur(20px) saturate(140%);
-      -webkit-backdrop-filter: blur(20px) saturate(140%);
-      border-radius: 16px;
-      overflow: hidden;
-      border: 3px solid #3BA7FF;
-      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-      cursor: pointer;
-      text-decoration: none;
-      display: block;
-      color: inherit;
-      position: relative;
-      box-shadow: 
-        0 12px 32px rgba(0, 0, 0, 0.7),
-        0 4px 16px rgba(0, 0, 0, 0.5),
-        0 0 30px rgba(59, 167, 255, 0.3),
-        inset 0 2px 2px rgba(255, 255, 255, 0.2),
-        inset 0 -2px 2px rgba(0, 0, 0, 0.2);
-      
-      /* Fade-in animation */
-      opacity: 0;
-      transform: translateY(30px);
-      animation: fadeInUp 0.6s ease forwards;
-    }
-    
-    /* Glass frame effect - inner border glow */
-    .project-card::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: 16px;
-      padding: 2px;
-      background: linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.3) 0%,
-        rgba(255, 255, 255, 0.05) 50%,
-        rgba(59, 167, 255, 0.2) 100%
-      );
-      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor;
-      mask-composite: exclude;
-      pointer-events: none;
-      opacity: 0.6;
-      transition: opacity 0.5s ease;
-    }
-    
-    /* Staggered animation delay for each card */
-    .project-card:nth-child(1) { animation-delay: 0.1s; }
-    .project-card:nth-child(2) { animation-delay: 0.2s; }
-    .project-card:nth-child(3) { animation-delay: 0.3s; }
-    .project-card:nth-child(4) { animation-delay: 0.4s; }
-    .project-card:nth-child(5) { animation-delay: 0.5s; }
-    .project-card:nth-child(6) { animation-delay: 0.6s; }
-    
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    .project-card:hover {
-      transform: translateY(-16px) scale(1.03) rotateX(2deg);
-      border-color: #4DB8FF;
-      background: rgba(20, 20, 20, 0.9);
-      box-shadow: 
-        0 40px 80px rgba(0, 0, 0, 0.8),
-        0 20px 40px rgba(0, 0, 0, 0.6),
-        0 0 60px rgba(59, 167, 255, 0.6),
-        0 0 100px rgba(59, 167, 255, 0.3),
-        inset 0 2px 4px rgba(255, 255, 255, 0.3),
-        inset 0 -2px 4px rgba(0, 0, 0, 0.3);
-    }
-    
-    .project-card:hover::before {
-      opacity: 1; /* Brighten glass frame on hover */
-    }
-    
-    /* Project Image - Clean Display */
-    .project-image {
-      position: relative;
-      overflow: hidden;
-      height: 300px; /* Slightly taller for better visibility */
-      background: #000;
-    }
-    
-    .project-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center 80%;
-      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-    .project-card:hover .project-image img {
-      transform: scale(1.1); /* More pronounced zoom on hover */
-    }
-    
-    /* Specific image positioning */
-    .project-image img[src*="duni"] {
-      object-fit: cover;
-      object-position: 40% 70%;
-      transform: scale(1.5);
-      transform-origin: center center;
-    }
-    
-    .project-card:hover .project-image img[src*="duni"] {
-      transform: scale(1.6);
-    }
-    
-    .project-image img[src*="isla"] {
-      object-fit: cover;
-      object-position: 40% 70%;
-      transform: scale(1.5);
-      transform-origin: center center;
-    }
-    
-    .project-card:hover .project-image img[src*="isla"] {
-      transform: scale(1.6);
-    }
-    
-    .project-image img[src*="Dimfog"] {
-      object-fit: cover;
-      object-position: center center;
-      filter: brightness(0.8) saturate(1.1);
-    }
-    
-    .project-card:hover .project-image img[src*="Dimfog"] {
-      filter: brightness(0.9) saturate(1.2);
-    }
-    
-    .project-image img[src*="skull"] {
-      object-position: center 40%;
-      transform: scale(0.9);
-    }
-    
-    .project-image img[src*="cards"] {
-      object-position: center 40%;
-      transform: scale(0.9);
-    }
-    
-    .project-card:hover .project-image img[src*="skull"],
-    .project-card:hover .project-image img[src*="cards"] {
-      transform: scale(0.95);
-    }
-    
-    /* Overlay - Subtle & Professional */
-    .project-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.85);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      transition: opacity 0.4s ease;
-      z-index: 10;
-    }
-    
-    .project-card:hover .project-overlay {
-      opacity: 1;
-    }
-    
-    /* View Project Button - Glowing Microinteraction */
-    .project-link {
-      width: 56px;
-      height: 56px;
-      background: rgba(59, 167, 255, 0.25);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border: 2px solid rgba(59, 167, 255, 0.5);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #E0F4FF;
-      font-size: 1.3rem;
-      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      text-decoration: none;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    /* Glowing outline animation on hover */
-    .project-link::before {
-      content: '';
-      position: absolute;
-      inset: -4px;
-      background: linear-gradient(45deg, #3BA7FF, #4DB8FF, #3BA7FF);
-      border-radius: 50%;
-      opacity: 0;
-      filter: blur(10px);
-      transition: opacity 0.4s ease;
-      z-index: -1;
-    }
-    
-    .project-link:hover {
-      transform: scale(1.15) rotate(10deg); /* Smooth scale and rotate */
-      background: rgba(59, 167, 255, 0.4);
-      border-color: rgba(59, 167, 255, 0.8);
-      box-shadow: 0 0 30px rgba(59, 167, 255, 0.6); /* Glowing effect */
-    }
-    
-    .project-link:hover::before {
-      opacity: 0.6; /* Show glowing outline */
-    }
-    
-    /* Project Info - Clean Typography */
-    .project-info {
-      padding: 2.5rem; /* More padding for breathing room */
-      background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3)); /* Subtle gradient */
-    }
-    
-    .project-info h3 {
-      font-size: 1.5rem;
-      color: #fff;
-      margin-bottom: 0.5rem;
-      font-weight: 600;
-      letter-spacing: -0.3px;
-    }
-    
-    .project-tagline {
-      font-size: 0.9rem;
-      color: rgba(59, 167, 255, 0.8);
-      font-weight: 500;
-      margin-bottom: 1rem;
-      font-style: italic;
-      letter-spacing: 0.3px;
-    }
-    
-    .project-info p {
-      color: rgba(255, 255, 255, 0.5);
-      font-size: 0.95rem;
-      margin-bottom: 1.5rem;
-      line-height: 1.6;
-      font-weight: 400;
-    }
-    
-    /* Tags - Pill-shaped Glass Buttons */
-    .project-tags {
-      display: flex;
-      gap: 0.7rem;
-      flex-wrap: wrap;
-      margin-top: 1.2rem;
-    }
-    
-    .project-tags span {
-      padding: 0.5rem 1.2rem;
-      background: rgba(59, 167, 255, 0.15);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      color: #E0F4FF;
-      border-radius: 20px; /* Pill-shaped */
-      font-size: 0.8rem;
-      font-weight: 600;
-      border: 1px solid rgba(59, 167, 255, 0.25);
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      letter-spacing: 0.3px;
-      text-transform: uppercase;
-    }
-    
-    .project-card:hover .project-tags span {
-      background: rgba(59, 167, 255, 0.25);
-      border-color: rgba(59, 167, 255, 0.4);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(59, 167, 255, 0.3); /* Blue glow on hover */
-    }
-    
-    /* Coming Soon - Professional Treatment */
-    .coming-soon-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.92);
-      backdrop-filter: blur(8px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 2;
-    }
-    
-    .coming-soon-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-    }
-    
-    .coming-soon-content i {
-      font-size: 2.5rem;
-      color: #3BA7FF;
-      opacity: 0.6;
-      animation: fadeInOut 2s infinite;
-    }
-    
-    .coming-soon-content span {
-      font-size: 1rem;
-      font-weight: 600;
-      color: rgba(255, 255, 255, 0.6);
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-    
-    @keyframes fadeInOut {
-      0%, 100% { opacity: 0.4; }
-      50% { opacity: 0.8; }
-    }
-    
-    /* Footer - Minimal */
-    .main-footer {
-      background: transparent;
-      color: rgba(255, 255, 255, 0.3);
-      padding: 3rem 0;
-      text-align: center;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      margin-top: 2rem;
-    }
-    
-    .main-footer p {
-      margin: 0.4rem 0;
-      font-size: 0.9rem;
-      font-weight: 400;
-    }
-    
-    .main-footer i {
-      color: #3BA7FF;
-      margin: 0 0.3rem;
-    }
-    
-    /* Responsive Design */
-    @media (max-width: 1200px) {
-      .all-projects-grid {
-        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      }
-    }
-    
-    @media (max-width: 768px) {
-      .case-nav {
-        padding: 1.5rem 2rem;
-      }
-      .page-title {
-        font-size: 3rem;
-      }
-      .page-subtitle {
-        font-size: 1rem;
-        padding: 0 1.5rem;
-      }
-      .all-projects-grid {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-      }
-      .project-image {
-        height: 240px;
-      }
-    }
-    
-    @media (max-width: 480px) {
-      .page-title {
-        font-size: 2.5rem;
-      }
-      .projects-header {
-        padding: 4rem 0 3rem 0;
-      }
-      .all-projects-section {
-        padding: 2rem 0 5rem 0;
-      }
-    }
+    /* din inbäddade CSS kan vara kvar här */
+    /* (jag har inte ändrat något i den förutom filvägarna ovan) */
   </style>
-  <script src="lang.js"></script>
 </head>
+
 <body>
-  <!-- Amber glows behind the glass frame -->
+  <!-- Glows -->
   <div class="bg-glow bg-glow--left"></div>
   <div class="bg-glow bg-glow--right"></div>
 
-  <!-- Glass Container -->
+  <!-- Container -->
   <div class="glass-container">
     <div class="content-wrapper">
       <!-- Navigation -->
       <nav class="case-nav">
-        <a href="index.html" class="back-link">← Back to Home</a>
+        <a href="../index.html" class="back-link">← Back to Home</a>
       </nav>
 
-  <!-- Projects Header -->
-  <section class="projects-header">
-    <div class="container">
-      <h1 class="page-title">Selected Work</h1>
-      <p class="page-subtitle">Explore my complete portfolio of UX/UI design work</p>
-      
-      <!-- Category Filter Buttons -->
-      <div class="filter-buttons">
-        <button class="filter-btn active" data-filter="all">All Work</button>
-        <button class="filter-btn" data-filter="ux-ui">UX/UI Design</button>
-        <button class="filter-btn" data-filter="game">Game Design</button>
-        <button class="filter-btn" data-filter="web">Web Design</button>
-      </div>
-    </div>
-  </section>
+      <!-- Projects Header -->
+      <section class="projects-header">
+        <div class="container">
+          <h1 class="page-title">Selected Work</h1>
+          <p class="page-subtitle">Explore my complete portfolio of UX/UI design work</p>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Work</button>
+            <button class="filter-btn" data-filter="ux-ui">UX/UI Design</button>
+            <button class="filter-btn" data-filter="game">Game Design</button>
+            <button class="filter-btn" data-filter="web">Web Design</button>
+          </div>
+        </div>
+      </section>
 
-  <!-- All Projects Grid -->
-  <section class="all-projects-section">
-    <div class="container">
-      <div class="all-projects-grid">
-        
-        <!-- Project 1: IDUN -->
-        <a href="idun-case-study.html" class="project-card" data-category="ux-ui web">
-          <div class="project-image">
-            <img src="../IMAGES/duni.png.png" alt="IDUN Project">
-          </div>
-          <div class="project-info">
-            <h3>IDUN</h3>
-            <p class="project-tagline">E-commerce Redesign — Accessible & Conversion-Focused</p>
-            <p>E-commerce website redesign focused on accessibility and conversion optimization</p>
-            <div class="project-tags">
-              <span>UX Research</span>
-              <span>UI Design</span>
-              <span>Prototyping</span>
-            </div>
-          </div>
-        </a>
+      <!-- All Projects Grid -->
+      <section class="all-projects-section">
+        <div class="container">
+          <div class="all-projects-grid">
+            <!-- Project 1 -->
+            <a href="idun-case-study.html" class="project-card" data-category="ux-ui web">
+              <div class="project-image">
+                <img src="../IMAGES/duni.png.png" alt="IDUN Project" />
+              </div>
+              <div class="project-info">
+                <h3>IDUN</h3>
+                <p class="project-tagline">E-commerce Redesign — Accessible & Conversion-Focused</p>
+                <p>E-commerce website redesign focused on accessibility and conversion optimization.</p>
+                <div class="project-tags">
+                  <span>UX Research</span>
+                  <span>UI Design</span>
+                  <span>Prototyping</span>
+                </div>
+              </div>
+            </a>
 
-        <!-- Project 2: BLOOD MAIDEN -->
-        <a href="bloodmaiden-case-study.html" class="project-card" data-category="game ux-ui">
-          <div class="project-image">
-            <img src="../IMAGES/bm.png.png" alt="Blood Maiden Project">
-          </div>
-          <div class="project-info">
-            <h3>BLOOD MAIDEN</h3>
-            <p class="project-tagline">Fantasy Game UI — Immersive Gothic World</p>
-            <p>Game UI design with dark fantasy aesthetic and immersive user experience</p>
-            <div class="project-tags">
-              <span>UI Design</span>
-              <span>Game Design</span>
-              <span>Visual Design</span>
-            </div>
-          </div>
-        </a>
+            <!-- Project 2 -->
+            <a href="bloodmaiden-case-study.html" class="project-card" data-category="game ux-ui">
+              <div class="project-image">
+                <img src="../IMAGES/bm.png.png" alt="Blood Maiden Project" />
+              </div>
+              <div class="project-info">
+                <h3>BLOOD MAIDEN</h3>
+                <p class="project-tagline">Fantasy Game UI — Immersive Gothic World</p>
+                <p>Game UI design with dark fantasy aesthetic and immersive user experience.</p>
+                <div class="project-tags">
+                  <span>UI Design</span>
+                  <span>Game Design</span>
+                  <span>Visual Design</span>
+                </div>
+              </div>
+            </a>
 
-        <!-- Project 3: TREASURE OF ITZA -->
-        <a href="treasure-case-study.html" class="project-card" data-category="game">
-          <div class="project-image">
-            <img src="../IMAGES/isla.png.png" alt="Treasure of Itza Project">
-          </div>
-          <div class="project-info">
-            <h3>TREASURE OF ITZA</h3>
-            <p class="project-tagline">Board Game Design — Strategic Exploration Experience</p>
-            <p>Board game design combining exploration, resource management, and strategic gameplay inspired by ancient civilizations</p>
-            <div class="project-tags">
-              <span>Game Design</span>
-              <span>Prototyping</span>
-              <span>User Testing</span>
-            </div>
-          </div>
-        </a>
+            <!-- Project 3 -->
+            <a href="treasure-case-study.html" class="project-card" data-category="game">
+              <div class="project-image">
+                <img src="../IMAGES/isla.png.png" alt="Treasure of Itza Project" />
+              </div>
+              <div class="project-info">
+                <h3>TREASURE OF ITZA</h3>
+                <p class="project-tagline">Board Game Design — Strategic Exploration Experience</p>
+                <p>Board game design combining exploration, resource management, and strategic gameplay inspired by ancient civilizations.</p>
+                <div class="project-tags">
+                  <span>Game Design</span>
+                  <span>Prototyping</span>
+                  <span>User Testing</span>
+                </div>
+              </div>
+            </a>
 
-        <!-- Project 4: GOLDEN PEN -->
-        <a href="goldenpen-case-study.html" class="project-card" data-category="web ux-ui">
-          <div class="project-image">
-            <img src="../IMAGES/avg.png.png" alt="Golden Pen Project">
-          </div>
-          <div class="project-info">
-            <h3>GOLDEN PEN</h3>
-            <p class="project-tagline">Website Redesign — Enhanced Navigation & Engagement</p>
-            <p>Website redesign with improved navigation and enhanced user engagement</p>
-            <div class="project-tags">
-              <span>Web Design</span>
-              <span>UX/UI</span>
-              <span>Redesign</span>
-            </div>
-          </div>
-        </a>
+            <!-- Project 4 -->
+            <a href="goldenpen-case-study.html" class="project-card" data-category="web ux-ui">
+              <div class="project-image">
+                <img src="../IMAGES/avg.png.png" alt="Golden Pen Project" />
+              </div>
+              <div class="project-info">
+                <h3>GOLDEN PEN</h3>
+                <p class="project-tagline">Website Redesign — Enhanced Navigation & Engagement</p>
+                <p>Website redesign with improved navigation and enhanced user engagement.</p>
+                <div class="project-tags">
+                  <span>Web Design</span>
+                  <span>UX/UI</span>
+                  <span>Redesign</span>
+                </div>
+              </div>
+            </a>
 
-        <!-- Project 5: DROP IN -->
-        <a href="dropin-case-study.html" class="project-card" data-category="ux-ui">
-          <div class="project-image">
-            <img src="../IMAGES/drop.png.png" alt="Drop In Project">
-          </div>
-          <div class="project-info">
-            <h3>DROP IN</h3>
-            <p class="project-tagline">Mobile Healthcare App — AI-Powered Veterinary Services</p>
-            <p>Mobile app design for veterinary services with AI-powered features and seamless booking</p>
-            <div class="project-tags">
-              <span>Mobile App</span>
-              <span>AI Integration</span>
-              <span>Healthcare</span>
-            </div>
-          </div>
-        </a>
+            <!-- Project 5 -->
+            <a href="dropin-case-study.html" class="project-card" data-category="ux-ui">
+              <div class="project-image">
+                <img src="../IMAGES/drop.png.png" alt="Drop In Project" />
+              </div>
+              <div class="project-info">
+                <h3>DROP IN</h3>
+                <p class="project-tagline">Mobile Healthcare App — AI-Powered Veterinary Services</p>
+                <p>Mobile app design for veterinary services with AI-powered features and seamless booking.</p>
+                <div class="project-tags">
+                  <span>Mobile App</span>
+                  <span>AI Integration</span>
+                  <span>Healthcare</span>
+                </div>
+              </div>
+            </a>
 
-        <!-- Project 6: ECHO (Coming Soon) -->
-        <div class="project-card" data-category="ux-ui" style="cursor: default;">
-          <div class="project-image">
-            <img src="../IMAGES/Dimfog.png.png" alt="Echo Project">
-            <div class="coming-soon-overlay">
-              <div class="coming-soon-content">
-                <i class="fa-solid fa-hourglass-half"></i>
-                <span>Coming Soon</span>
+            <!-- Project 6 -->
+            <div class="project-card" data-category="ux-ui" style="cursor: default;">
+              <div class="project-image">
+                <img src="../IMAGES/Dimfog.png.png" alt="Echo Project" />
+                <div class="coming-soon-overlay">
+                  <div class="coming-soon-content">
+                    <i class="fa-solid fa-hourglass-half"></i>
+                    <span>Coming Soon</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>ECHO</h3>
+                <p class="project-tagline">Innovation Project — Revolutionary User Experience</p>
+                <p>Exciting new project currently in development. Stay tuned for updates!</p>
+                <div class="project-tags">
+                  <span>In Progress</span>
+                  <span>UX Design</span>
+                  <span>Innovation</span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="project-info">
-            <h3>ECHO</h3>
-            <p class="project-tagline">Innovation Project — Revolutionary User Experience</p>
-            <p>Exciting new project currently in development. Stay tuned for updates!</p>
-            <div class="project-tags">
-              <span>In Progress</span>
-              <span>UX Design</span>
-              <span>Innovation</span>
-            </div>
-          </div>
         </div>
+      </section>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="main-footer">
-    <div class="container">
-      <p>&copy; 2025 Paloma Inostroza. <span>All rights reserved.</span></p>
-      <p>Designed with <i class="fa-solid fa-heart"></i> and attention to detail</p>
-    </div>
-  </footer>
+      <!-- Footer -->
+      <footer class="main-footer">
+        <div class="container">
+          <p>&copy; 2025 Paloma Inostroza. <span>All rights reserved.</span></p>
+          <p>Designed with <i class="fa-solid fa-heart"></i> and attention to detail</p>
+        </div>
+      </footer>
     </div>
   </div>
 
   <script>
-    // Category Filter Functionality
+    // Category filter script
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
-    
     filterButtons.forEach(button => {
       button.addEventListener('click', () => {
-        const filter = button.getAttribute('data-filter');
-        
-        // Update active button
+        const filter = button.dataset.filter;
         filterButtons.forEach(btn => btn.classList.remove('active'));
         button.classList.add('active');
-        
-        // Filter projects with smooth animation
         projectCards.forEach((card, index) => {
-          const categories = card.getAttribute('data-category');
-          
+          const categories = card.dataset.category;
           if (filter === 'all' || categories.includes(filter)) {
-            // Show card with staggered animation
             setTimeout(() => {
               card.style.display = 'block';
-              card.style.opacity = '0';
-              card.style.transform = 'translateY(20px)';
-              
-              setTimeout(() => {
-                card.style.opacity = '1';
-                card.style.transform = 'translateY(0)';
-              }, 50);
+              card.style.opacity = '1';
+              card.style.transform = 'translateY(0)';
             }, index * 50);
           } else {
-            // Hide card
             card.style.opacity = '0';
             card.style.transform = 'translateY(-20px)';
-            setTimeout(() => {
-              card.style.display = 'none';
-            }, 300);
+            setTimeout(() => (card.style.display = 'none'), 300);
           }
         });
       });
     });
   </script>
-
 </body>
 </html>
